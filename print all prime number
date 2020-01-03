@@ -1,0 +1,12 @@
+# Take input from the user
+number = int(input("Enter the input number: "))
+
+for num in range(2, number+1):
+    # Prime number is greater than 1
+    if num > 1:
+        for i in range (2, num):
+            # check for prime number
+            if (num % i) == 0:
+                break
+        else:
+            print("The number ", num, "is a prime number")
